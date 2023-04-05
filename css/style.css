@@ -1,6 +1,7 @@
 :root{
     --link-color: #1c1d1f;
     --link-hover: #5624d0;
+    --light-gray: #6a6f73;
 }
 *{
     padding: 0;
@@ -64,6 +65,10 @@ nav .navigation .ud-bu-tea{
     /* border: 1px solid red; */
     padding: 30px 0;
 }
+nav .navigation .ud-one,
+nav .navigation .ud-two{
+    transition: .5s ease;
+}
 nav .navigation .ud-one:hover .window-1{
     display: block;
 }
@@ -81,6 +86,7 @@ nav .navigation .ud-bu-tea .window-2{
     /* border: 1px solid green; */
     display: none;
     box-shadow: 2px 2px 2px lightgray;
+    transition: 1s ease;
 }
 .window-1{
     right: 0;
@@ -108,4 +114,97 @@ nav .navigation .ud-bu-tea .window-2{
     color: white;
     font-size: 16px;
     font-weight: 600;
+}
+.navigation .cart{
+    /* border: 1px solid green; */
+    padding: 30px 0;
+}
+.navigation .cart svg{
+    color: black;
+    /* font-size: 18px; */
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.navigation .cart:hover svg,
+.navigation .cart:hover .window-3{
+    color: var(--link-hover);
+    display: block;
+}
+.navigation .cart .window-3{
+    width: 300px;
+    display: none;
+    top: 80px;
+    right: -20px;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 2px 2px 2px lightgray;
+}
+.navigation .cart .window-3 p{
+    color: var(--light-gray);
+}
+.navigation .cart .window-3 a{
+    color: var(--link-hover);
+    font-size: 14px;
+    font-weight: 700;
+}
+.navigation .access{
+    gap: 5px;
+}
+.navigation .access a{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 9px 21px;
+}
+.navigation .access .log:hover{
+    background-color: #00000007;
+}
+.navigation .access .sign{
+    background-color: var(--link-color);
+    padding: 10px 21px;
+}
+.navigation .access .sign:hover{
+    background: #000;
+}
+.navigation .access button{
+    outline: none;
+    border-style: none;
+    background-color: white;
+}
+.navigation .access svg{
+    font-size: 14px;
+    padding: 12px;
+}
+/* lang-selection */
+.lang-select{
+    background-color: rgba(0, 0, 0, 0.253);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.lang-select .main-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lang-select .content{
+    width: 600px;
+    height: 350px;
+    background-color: white;
+    padding: 20px;
+}
+.lang-select .content .top p{
+    font-weight: 700;
+    font-size: 1.25em;
+}
+.lang-select .content .bottom div a{
+    display: block;
+    text-decoration: none;
+    padding: 8px 0;
+    padding-right: 30px;
+    color: var(--link-color);
+}
+.lang-select .content .bottom div a:hover{
+    color: var(--link-hover);
 }

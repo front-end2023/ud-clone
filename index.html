@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css.map">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="position-relative">
     <div class="alert my-alert alert-dismissible fade show text-center" role="alert">
         <strong>Shop our sale </strong>| Keep your skills on the leading edge.Courses from $16.99 through April 6. <br> <span>2 days left!</span>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -45,12 +45,56 @@
                     <button><a href="">Learn more</a></button>
                 </div>
             </div>
-            <i class="fa-solid fa-cart-shopping"></i>
-            <a href="">Log in</a>
-            <a href="">Sign up</a>
-            <i class="fa-solid fa-globe"></i>
+            <div class="cart position-relative">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="window-3 position-absolute text-center">
+                    <p>Your cart is empty</p>
+                    <a href="" class="text-decoration-none">Keep Shopping</a>
+                </div>
+            </div>
+            <div class="access d-flex justify-content-around align-items-center">
+                <a class="log text-decoration-none d-inline-block text-dark border border-dark" href="">Log in</a>
+                <a class="sign text-decoration-none d-inline-block text-white" href="">Sign up</a>
+                <button class="border border-dark d-flex"><i class="fa-solid fa-globe "></i></button>
+            </div>
         </div>
     </nav>
+    <section class="lang-select position-absolute">
+        <div class="main-container">
+            <div class="content">
+                <div class="top d-flex justify-content-between align-items-start">
+                    <p>Choose a language</p>
+                    <i class="fa-solid fa-xmark d-block"></i>
+                </div>
+                <div class="bottom d-flex justify-content-between h-100">
+                    <div class="d-flex flex-column ">
+                        <a href="">English</a>
+                        <a href="">Deutsch</a>
+                        <a href="">Español</a>
+                        <a href="">Français</a>
+                        <a href="">Bahasa Indonesia</a>
+                        <a href="">Italiano</a>
+                    </div>
+                    <div class="d-flex flex-column  ">
+                        <a href="">日本語</a>
+                        <a href="">한국어</a>
+                        <a href="">Nederlands</a>
+                        <a href="">Polski</a>
+                        <a href="">Português</a>
+                        <a href="">Română</a>
+                    </div>
+                    <div class="d-flex flex-column ">
+                        <a href="">Русский</a>
+                        <a href="">ภาษาไทย</a>
+                        <a href="">Türkçe</a>
+                        <a href="">Tiếng Việt</a>
+                        <a href="">中文(简体)</a>
+                        <a href="">中文(繁體)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
