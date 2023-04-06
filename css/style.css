@@ -2,6 +2,7 @@
     --link-color: #1c1d1f;
     --link-hover: #5624d0;
     --light-gray: #6a6f73;
+    --lightLight-gray: #6a6f7371;
 }
 *{
     padding: 0;
@@ -12,10 +13,14 @@
 .my-alert{
     background-color: #eceb98;
     font-size: 1rem;
+    margin-bottom: 0;
 }
 .my-alert span{
     font-size: 1.2em;
     font-weight: 800;
+}
+nav{
+    box-shadow: 2px 2px 2px var(--lightLight-gray);
 }
 nav .navigation{
     display: flex;
@@ -25,13 +30,36 @@ nav .navigation{
 nav .navigation img{
     width: 100px;
 }
+/* Dropdown Menu start  */
 nav .navigation .nav_list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 45px 15px 0px 15px;
+    border: 1px solid red;
 }
+.navigation .nav_list:hover .main-list{
+    display: block;
+}
+nav .navigation .nav_list .main-list{
+    padding: 0 15px;
+    top: 85px;
+    width: 250px;
+    border: 1px solid red;
+    display: none;
+}
+.main-list:hover .second-list{
+    display: block;
+}
+.second-list,.third-list{
+    width: 250px;
+    border: 1px solid red;
+    display: none;
+}
+.second-list:hover .third-list{
+    display: block;
+}
+
+/* Dropdown Menu end  */
 nav .navigation .search{
-    flex-basis: 40%;
+    flex: 1;
     position: relative;
 }
 nav .navigation .search form input{
@@ -63,7 +91,7 @@ nav .navigation .ud-bu-tea .l_1:hover{
 nav .navigation .ud-bu-tea{
     position: relative;
     /* border: 1px solid red; */
-    padding: 30px 0;
+    padding: 30px 10px;
 }
 nav .navigation .ud-one,
 nav .navigation .ud-two{
@@ -117,7 +145,7 @@ nav .navigation .ud-bu-tea .window-2{
 }
 .navigation .cart{
     /* border: 1px solid green; */
-    padding: 30px 0;
+    padding: 30px 10px;
 }
 .navigation .cart svg{
     color: black;
@@ -137,7 +165,7 @@ nav .navigation .ud-bu-tea .window-2{
     right: -20px;
     padding: 16px;
     background-color: white;
-    box-shadow: 2px 2px 2px lightgray;
+    box-shadow: 2px 2px 2px var(--light-gray);
 }
 .navigation .cart .window-3 p{
     color: var(--light-gray);
@@ -176,11 +204,13 @@ nav .navigation .ud-bu-tea .window-2{
 }
 /* lang-selection */
 .lang-select{
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
+    height: 100vh;
+    display: none;
 }
 .lang-select .main-container{
     height: 100vh;
