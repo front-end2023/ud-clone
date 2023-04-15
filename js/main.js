@@ -5,7 +5,7 @@ function closeLang(){
     document.getElementById("lang-window").style.display = "none";
 }
 
-// show List two-1
+// show List two-3
 let subMenu_1 = document.getElementById("3_1");
 
 function hidde_1(){

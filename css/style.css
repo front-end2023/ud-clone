@@ -37,7 +37,7 @@ nav .navigation img{
     margin-bottom: 0;
     padding: 25px 10px;
 }
-
+/*      List start      */
 .big-wrapper::after{
     content: '';
     width: 100%;
@@ -60,6 +60,7 @@ nav .navigation img{
 .list-two,
 .list-three{
     width: 250px;
+    height: 60vh;
 }
 .list-one{
     top: 0px;
@@ -71,6 +72,7 @@ nav .navigation img{
     top: 0;
     left: 500px;
     box-shadow: 1px 1px 1px var(--lightLight-gray),-1px -1px 1px var(--lightLight-gray);
+    display: none;
 
 }
 .sub1{
@@ -79,6 +81,7 @@ nav .navigation img{
     width: 100%;
 }
 .sub2{
+    height: 60vh;
     top: 0;
     left: 250px;
     width: 250px;
@@ -118,6 +121,8 @@ nav .navigation img{
 .small-wrapper svg:hover{
     color: var(--link-hover);
 }
+
+/*      List end      */ 
 nav .navigation .search{
     flex: 1;
     position: relative;
